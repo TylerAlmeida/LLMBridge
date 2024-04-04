@@ -15,11 +15,20 @@ LLMBridge is a Python utility designed to facilitate the integration of codebase
 ### Prerequisites
 
 - Python 3.x installed on your system.
+- pathspec library installed in your environment
 
 ### Installation
 
 1. Clone this repository or download the script directly to your local machine.
 2. Ensure `python` command is available in your system's PATH.
+
+### Setup
+
+Install `pathspec` external library for a more seamless implementation of .gitignore files
+
+```bash
+pip install pathspec
+```
 
 ### Usage
 

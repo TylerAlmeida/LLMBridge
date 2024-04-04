@@ -5,7 +5,8 @@ LLMBridge is a Python utility designed to facilitate the integration of codebase
 ## Features
 
 - **Recursive Directory Traversal**: Processes your entire project, including subdirectories, to capture every piece of code.
-- **.gitignore Support**: Automatically skips files and directories specified in `.gitignore`, ensuring only relevant files are included.
+- **.gitignore Support**: Automatically skips files and directories specified in `.gitignore`, including llmbridge.py itself, ensuring only relevant files are included.
+- **Security considerations**: Appends the output file to .gitignore to avoid accidental exposure of code through a commit.
 - **Customizable Whitelist**: Utilizes a `.llmbridgeinclude` file to focus on specific file types, enhancing the model's understanding of your codebase.
 - **Automatic `.llmbridgeinclude` Generation**: Generates a default whitelist if `.llmbridgeinclude` is missing, covering common coding file types.
 - **Robust Error Handling**: Gracefully handles file access and encoding issues, ensuring a smooth operation.
